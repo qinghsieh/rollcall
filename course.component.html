@@ -1,0 +1,38 @@
+<app-header></app-header>
+
+
+<div id="content">
+
+<!--
+<nav>
+    <a>107</a>&nbsp;&nbsp;&nbsp;
+    <a [routerLink]="['/period']">106</a>
+</nav>
+-->
+
+
+
+<h2>107課程列表</h2>
+<ul class="box">
+    <tr>
+        <th width="200" bgcolor="#00D1D1">課程代碼</th>
+        <th width="200" bgcolor="#00D1D1">課程名稱</th>
+        <th width="200" bgcolor="#00D1D1">課程選擇</th>
+    </tr>
+    <form *ngFor="let cur of curriculum" >       
+        <tr>
+            <th width="200" bgcolor="#FAFAFA"><a>{{cur.id}}</a></th>
+            <th width="200" bgcolor="#FAFAFA"><a>{{cur.name}}</a></th>
+            <th width="200" bgcolor="#FAFAFA"><button [routerLink]="['/detail']">選擇</button></th>
+        </tr>
+    </form>
+</ul>
+
+
+</div>
+
+
+<div id="footer">
+	<p>footer</p>
+</div>
+
